@@ -10,8 +10,7 @@
 
 namespace MathParser\Lexing;
 
-use MathParser\Lexing\TokenPrecedence;
-use MathParser\Lexing\TokenAssociativity;
+use MathParser\Lexing\TokenType;
 
 /**
  * Token class

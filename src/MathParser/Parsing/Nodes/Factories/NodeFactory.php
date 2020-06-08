@@ -15,7 +15,12 @@
  */
 namespace MathParser\Parsing\Nodes\Factories;
 
-use MathParser\Parsing\Nodes\Factories\UnaryMinusNodeFactory;
+use MathParser\Exceptions\DivisionByZeroException;
+use MathParser\Parsing\Nodes\Factories\AdditionNodeFactory;
+use MathParser\Parsing\Nodes\Factories\SubtractionNodeFactory;
+use MathParser\Parsing\Nodes\Factories\MultiplicationNodeFactory;
+use MathParser\Parsing\Nodes\Factories\DivisionNodeFactory;
+use MathParser\Parsing\Nodes\Factories\ExponentiationNodeFactory;
 use MathParser\Parsing\Nodes\ExpressionNode;
 
 /**

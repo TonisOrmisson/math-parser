@@ -14,7 +14,7 @@ use MathParser\Exceptions\UnknownOperatorException;
 use MathParser\Exceptions\UnknownVariableException;
 use MathParser\Extensions\Math;
 use MathParser\Interpreting\Visitors\Visitor;
-use MathParser\Lexer\StdMathLexer;
+use MathParser\Lexing\StdMathLexer;
 use MathParser\Parsing\Nodes\ConstantNode;
 use MathParser\Parsing\Nodes\ExpressionNode;
 use MathParser\Parsing\Nodes\FunctionNode;
@@ -183,7 +183,7 @@ class Evaluator implements Visitor
      *
      *      FunctionNode is *not* recognized.
      * @return float
-     * @see \MathParser\Lexer\StdMathLexer StdMathLexer
+     * @see \MathParser\Lexing\StdMathLexer StdMathLexer
      * @see \MathParser\StdMathParser StdMathParser
      *
      * @param  FunctionNode             $node AST to be evaluated
@@ -329,7 +329,7 @@ class Evaluator implements Visitor
      *
      *      ConstantNode is *not* recognized.
      * @return float
-     * @see \MathParser\Lexer\StdMathLexer StdMathLexer
+     * @see \MathParser\Lexing\StdMathLexer StdMathLexer
      * @see \MathParser\StdMathParser StdMathParser
      *
      * @param  ConstantNode             $node AST to be evaluated

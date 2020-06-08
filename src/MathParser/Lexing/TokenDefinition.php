@@ -10,7 +10,6 @@
 
 namespace MathParser\Lexing;
 
-use MathParser\Lexing\TokenAssociativity;
 
 /**
  * Token definitions using regular expressions to match input
