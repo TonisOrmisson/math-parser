@@ -26,11 +26,11 @@ use MathParser\Exceptions\DivisionByZeroException;
 class Rational
 {
     /**
-     * int $p numerator
+     * @var int $p numerator
      */
     public $p;
     /**
-     * int $q denominator
+     * @var int $q denominator
      */
     public $q;
 

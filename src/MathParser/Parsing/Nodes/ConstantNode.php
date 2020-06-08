@@ -17,10 +17,8 @@ use MathParser\Interpreting\Visitors\Visitor;
 class ConstantNode extends Node
 {
     /**
-     * Name of the constant, e.g. 'pi' or 'e'.
-     *
-     * string $value
-     **/
+     * @var string $value Name of the constant, e.g. 'pi' or 'e'.
+     */
     private $value;
 
     /**

@@ -18,7 +18,7 @@ use MathParser\Interpreting\Visitors\Visitor;
  */
 class PostfixOperatorNode extends Node
 {
-    /** string $name Name of the postfix operator. Currently, only '!' is possible. */
+    /** @var string $name Name of the postfix operator. Currently, only '!' is possible. */
     private $name;
 
     /** Constructor. Create a PostfixOperatorNode with given value. */

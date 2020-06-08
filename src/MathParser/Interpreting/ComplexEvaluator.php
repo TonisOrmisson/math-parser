@@ -49,7 +49,7 @@ use MathParser\Parsing\Nodes\VariableNode;
 class ComplexEvaluator implements Visitor
 {
     /**
-     * mixed[] $variables Key/value pair holding current values
+     * @var mixed[] $variables Key/value pair holding current values
      *      of the variables used for evaluating.
      *
      */

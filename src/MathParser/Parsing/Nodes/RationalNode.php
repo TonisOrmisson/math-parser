@@ -18,11 +18,11 @@ use MathParser\Interpreting\Visitors\Visitor;
 class RationalNode extends Node
 {
     /**
-     * int $p The numerator of the represented number.
+     * @var int $p The numerator of the represented number.
      */
     private $p;
     /**
-     * int $q The denominator of the represented number.
+     * @var int $q The denominator of the represented number.
      */
     private $q;
 

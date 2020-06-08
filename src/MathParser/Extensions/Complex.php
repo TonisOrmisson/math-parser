@@ -29,11 +29,11 @@ use MathParser\Exceptions\DivisionByZeroException;
 class Complex
 {
     /**
-     * float $x real part
+     * @var float $x real part
      */
     private $x;
     /**
-     * float $y real part
+     * @var float $y real part
      */
     private $y;
 

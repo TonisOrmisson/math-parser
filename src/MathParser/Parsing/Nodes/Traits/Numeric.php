@@ -25,12 +25,19 @@ use MathParser\Parsing\Nodes\RationalNode;
  *
  */
 trait Numeric {
+    /**
+     * @return bool
+     */
     protected function isNumeric($operand)
     {
         return ($operand instanceof NumberNode || $operand instanceof IntegerNode || $operand instanceof RationalNode);
 
     }
 
+    /**
+     * @param Node $node
+     * @return int
+     */
     protected function orderType($node)
     {
         if ($node instanceof IntegerNode) return Node::NumericInteger;
@@ -39,6 +46,12 @@ trait Numeric {
 
         return 0;
     }
+
+    /**
+     * @param Node $node
+     * @param Node $other
+     * @return mixed
+     */
     protected function resultingType($node, $other)
     {
         return max($this->orderType($node), $this->orderType($other));

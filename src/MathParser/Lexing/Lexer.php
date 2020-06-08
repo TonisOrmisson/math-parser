@@ -39,7 +39,7 @@ use MathParser\Exceptions\UnknownTokenException;
 class Lexer
 {
     /**
-     * TokenDefinition[] $tokenDefinition list of tokens recognized by the Lexer.
+     * @var TokenDefinition[] $tokenDefinition list of tokens recognized by the Lexer.
      */
     private $tokenDefinitions = [];
 

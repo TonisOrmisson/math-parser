@@ -44,7 +44,7 @@ use MathParser\Parsing\Nodes\VariableNode;
 class ASCIIPrinter implements Visitor
 {
     /**
-     * StdMathLexer $lexer
+     * @var StdMathLexer $lexer
      */
     private $lexer;
 

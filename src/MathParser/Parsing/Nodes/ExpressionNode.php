@@ -22,17 +22,17 @@ class ExpressionNode extends Node
     use Sanitize;
 
     /**
-     * Node $left Left operand
+     * @var Node $left Left operand
      */
     private $left;
-    /** string $operator Operator, e.g. '+', '-', '*', '/' or '^' **/
+    /** @var string $operator Operator, e.g. '+', '-', '*', '/' or '^' **/
     private $operator;
-    /** Node $right Right operand **/
+    /** @var Node $right Right operand **/
     private $right;
 
-    /** int $precedence Precedence. Operators with higher prcedence bind harder **/
+    /** @var int $precedence Precedence. Operators with higher prcedence bind harder **/
     private $precedence;
-    /** LEFT_ASSOC | RIGHT_ASSOC $associativity Associativity of operator. **/
+    /** @var int $associativity LEFT_ASSOC | RIGHT_ASSOC $associativity Associativity of operator. **/
     private $associativity;
 
     /** integer constant representing left associatve operators */

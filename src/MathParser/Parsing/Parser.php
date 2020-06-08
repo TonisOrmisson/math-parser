@@ -61,23 +61,25 @@ use MathParser\Interpreting\PrettyPrinter;
 class Parser
 {
     /**
-    * Token[] list of tokens to process
+    * @var Token[] list of tokens to process
     */
     protected $tokens;
     /**
-    * Stack stack of operators waiting to process
+    * @var Stack stack of operators waiting to process
     */
     protected $operatorStack;
     /**
-    * Stack stack of operands waiting to process
+    * @var Stack stack of operands waiting to process
     */
     protected $operandStack;
     /**
-     * NodeFactory
+     * @var NodeFactory
      */
-     protected $nodeFactory;
+    protected $nodeFactory;
 
+    /** @var bool $rationalFactory */
     protected $rationalFactory = false;
+    /** @var bool $simplifyingParser */
     protected $simplifyingParser = true;
 
     /**

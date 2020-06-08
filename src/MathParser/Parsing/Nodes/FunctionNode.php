@@ -16,9 +16,9 @@ use MathParser\Interpreting\Visitors\Visitor;
  */
 class FunctionNode extends Node
 {
-    /** string $name Function name, e.g. 'sin' */
+    /** @var string $name Function name, e.g. 'sin' */
     private $name;
-    /** Node $operand AST of function operand */
+    /** @var Node $operand AST of function operand */
     private $operand;
 
     /** Constructor, create a FunctionNode with given name and operand */
