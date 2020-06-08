@@ -44,12 +44,12 @@ use MathParser\Parsing\Nodes\VariableNode;
 class LaTeXPrinter implements Visitor
 {
     /**
-     * StdMathLexer $lexer
+     * @var StdMathLexer $lexer
      */
     private $lexer;
 
     /**
-     * Flag to determine if division should be typeset
+     * @var bool $solidus Flag to determine if division should be typeset
      * with a solidus, e.g. x/y or a proper fraction \frac{x}{y}
      */
     private $solidus = false;
