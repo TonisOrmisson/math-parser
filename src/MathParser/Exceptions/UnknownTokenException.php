@@ -15,7 +15,10 @@
   */
 class UnknownTokenException extends MathParserException
 {
-    /** Constructor. Create a UnknownTokenException */
+    /**
+     * Constructor. Create a UnknownTokenException
+     * {@inheritDoc}
+     */
     public function __construct($name)
     {
         parent::__construct("Unknown token $name encountered");

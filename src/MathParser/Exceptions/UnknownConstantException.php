@@ -17,7 +17,10 @@
   */
 class UnknownConstantException extends MathParserException
 {
-    /** Constructor. Create a UnknownConstantException. */
+    /**
+     * Constructor. Create a UnknownConstantException.
+     * {@inheritDoc}
+     */
     public function __construct($operator)
     {
         parent::__construct("Unknown constant $operator.");

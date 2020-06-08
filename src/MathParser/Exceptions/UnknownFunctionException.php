@@ -17,7 +17,10 @@ namespace MathParser\Exceptions;
  */
 class UnknownFunctionException extends MathParserException
 {
-    /** Constructor. Create a UnknownFunctionException */
+    /**
+     * Constructor. Create a UnknownFunctionException
+     * {@inheritDoc}
+     */
     public function __construct($operator)
     {
         parent::__construct("Unknown function $operator.");

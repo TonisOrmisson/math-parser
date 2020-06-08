@@ -17,7 +17,10 @@
   */
 class UnknownOperatorException extends MathParserException
 {
-    /** Constructor. Create a UnknownOperatorException */
+    /**
+     * Constructor. Create a UnknownOperatorException
+     * {@inheritDoc}
+     */
     public function __construct($operator)
     {
         parent::__construct("Unknown operator $operator.");

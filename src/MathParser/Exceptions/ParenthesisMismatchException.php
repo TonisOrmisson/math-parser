@@ -15,7 +15,10 @@
   */
 class ParenthesisMismatchException extends MathParserException
 {
-    /** Constructor. Create a ParenthesisMismatchException */
+    /**
+     * Constructor. Create a ParenthesisMismatchException
+     * {@inheritDoc}
+     */
     public function __construct($data = null)
     {
         parent::__construct("Unable to match delimiters.");
