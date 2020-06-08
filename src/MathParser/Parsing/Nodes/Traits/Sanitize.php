@@ -13,6 +13,7 @@
  */
 namespace MathParser\Parsing\Nodes\Traits;
 
+use MathParser\Parsing\Nodes\Node;
 use MathParser\Parsing\Nodes\NumberNode;
 use MathParser\Parsing\Nodes\IntegerNode;
 use MathParser\Parsing\Nodes\RationalNode;

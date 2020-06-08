@@ -16,7 +16,7 @@ use MathParser\Interpreting\Visitors\Visitor;
  */
 class NumberNode extends Node
 {
-    /** int|float $value The value of the represented number. */
+    /** @var int|float $value The value of the represented number. */
     private $value;
 
     /** Constructor. Create a NumberNode with given value. */

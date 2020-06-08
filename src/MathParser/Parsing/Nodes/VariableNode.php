@@ -16,7 +16,7 @@ use MathParser\Interpreting\Visitors\Visitor;
  */
 class VariableNode extends Node
 {
-    /** string $name Name of represented variable, e.g. 'x' */
+    /** @var string $name Name of represented variable, e.g. 'x' */
     private $name;
 
     /** Constructor. Create a VariableNode with a given variable name. */

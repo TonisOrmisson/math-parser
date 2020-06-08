@@ -14,7 +14,7 @@ namespace MathParser\Parsing;
  * Utility class, implementing a simple FIFO stack
  */
 class Stack {
-    /** mixed[] $data internal storage of data on the stack. */
+    /** @var mixed[] $data internal storage of data on the stack. */
     protected $data = array();
 
     /**
