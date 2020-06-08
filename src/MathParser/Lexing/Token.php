@@ -24,11 +24,11 @@ use MathParser\Lexing\TokenAssociativity;
 class Token
 {
 
-    /** string $value (Standadized) value of token. */
+    /** @var string $value (Standadized) value of token. */
     private $value;
-    /** int $type Token type as defined in TokenType class */
+    /** @var int $type Token type as defined in TokenType class */
     private $type;
-    /** string $match The actual string matched in the input. */
+    /** @var string $match The actual string matched in the input. */
     private $match;
 
     /**

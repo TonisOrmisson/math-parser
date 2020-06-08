@@ -78,6 +78,6 @@ final class TokenType
     /** Token representing white space, e.g. spaces and tabs. */
     const Whitespace = 999;
 
-    /** Token representing a senitinel, for internal used in the Parser. Not used. */
+    /** Token representing a sentinel, for internal used in the Parser. Not used. */
     const Sentinel = 1000;
 }
