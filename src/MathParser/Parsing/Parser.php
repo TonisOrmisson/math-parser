@@ -17,8 +17,6 @@ namespace MathParser\Parsing;
 
 use MathParser\Lexing\Token;
 use MathParser\Lexing\TokenType;
-use MathParser\Lexing\TokenPrecedence;
-use MathParser\Lexing\TokenAssociativity;
 
 use MathParser\Parsing\Nodes\Node;
 use MathParser\Parsing\Nodes\ExpressionNode;

@@ -11,8 +11,6 @@
 namespace MathParser\Lexing;
 
 use MathParser\Lexing\TokenType;
-use MathParser\Lexing\TokenPrecedence;
-use MathParser\Lexing\TokenAssociativity;
 
 /**
  * Token class

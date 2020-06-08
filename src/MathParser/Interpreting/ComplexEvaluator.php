@@ -13,7 +13,7 @@ use MathParser\Exceptions\UnknownOperatorException;
 use MathParser\Exceptions\UnknownVariableException;
 use MathParser\Extensions\Complex;
 use MathParser\Interpreting\Visitors\Visitor;
-use MathParser\Lexer\StdMathLexer;
+use MathParser\Lexing\StdMathLexer;
 use MathParser\Parsing\Nodes\ConstantNode;
 use MathParser\Parsing\Nodes\ExpressionNode;
 use MathParser\Parsing\Nodes\FunctionNode;
@@ -180,7 +180,7 @@ class ComplexEvaluator implements Visitor
      *
      *      FunctionNode is *not* recognized.
      * @retval float
-     * @see \MathParser\Lexer\StdMathLexer StdMathLexer
+     * @see \MathParser\Lexing\StdMathLexer StdMathLexer
      * @see \MathParser\StdMathParser StdMathParser
      *
      * @param  FunctionNode             $node AST to be evaluated
@@ -291,7 +291,7 @@ class ComplexEvaluator implements Visitor
      *
      *      ConstantNode is *not* recognized.
      * @retval float
-     * @see \MathParser\Lexer\StdMathLexer StdMathLexer
+     * @see \MathParser\Lexing\StdMathLexer StdMathLexer
      * @see \MathParser\StdMathParser StdMathParser
      *
      * @param  ConstantNode             $node AST to be evaluated

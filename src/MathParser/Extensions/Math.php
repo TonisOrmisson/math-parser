@@ -41,7 +41,7 @@ class Math {
      * otherwise use the Lanczos approximation
      *
      * @param float $a
-     * @throws InvalidArgumentException if $a < 0
+     * @throws \InvalidArgumentException if $a < 0
      * @retval float
      */
 	public static function logGamma($a) {
